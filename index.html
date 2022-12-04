@@ -24,12 +24,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyPortfolio - v4.9.1
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- ======================================================= -->
 </head>
 
 <body>
@@ -72,8 +67,8 @@
           <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="filters">
               <a href="#" data-filter="*" class="active">All</a>
-              <a href="#" data-filter=".web">Web</a>
-              <a href="#" data-filter=".mediawiki">MediaWiki</a>
+              <a href="#" data-filter=".web">Websites</a>
+              <a href="#" data-filter=".mediawiki">Project Description</a>
               <a href="#" data-filter=".wikicommons">WikiCommons</a>
               <a href="#" data-filter=".querysample">Query Sample</a>
             </div>
@@ -81,7 +76,7 @@
         </div>
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://tabular-data-from-sparql.netlify.app/" class="item-wrap fancybox">
+            <a href="https://tabular-data-from-sparql.netlify.app/" class="item-wrap fancybox" target="_blank">
               <div class="grid">
                 <h4>Tabular Data from SPARQL</h4>
 
@@ -90,7 +85,7 @@
             </a>
           </div>
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href=" https://muinaismuistot.netlify.app/" class="item-wrap fancybox">
+            <a href=" https://muinaismuistot.netlify.app/" class="item-wrap fancybox" target="_blank">
               <div class="grid">
                 <h4>Muinaismuistotinfo.info</h4>
               </div>
@@ -99,7 +94,7 @@
           </div>
           <div class="item mediawiki col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="https://www.mediawiki.org/wiki/Muinaismuistotinfo.info_sofware_project_(autumn_2022)"
-              class="item-wrap fancybox">
+              class="item-wrap fancybox" target="_blank">
               <div class="grid">
                 <h4>Muinaismuistotinfo.info Software Project</h4>
               </div>
@@ -108,7 +103,7 @@
           </div>
           <div class="item mediawiki col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="https://www.mediawiki.org/wiki/SPARQL_to_datanamespace_project_(autumn_2022)"
-              class="item-wrap fancybox">
+              class="item-wrap fancybox" target="_blank">
               <div class="grid">
                 <h4>SPARQL to Datanamespace Project</h4>
               </div>
@@ -117,24 +112,17 @@
           </div>
           <div class="item wikicommons col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="https://commons.wikimedia.org/wiki/Data:Sandbox/JosephineBot/uploadTest.tab"
-              class="item-wrap fancybox">
+              class="item-wrap fancybox" target="_blank">
               <div class="grid">
                 <h4>Data:Sandbox/JosephineBot/uploadTest.tab</h4>
               </div>
               <img style="width: 50px" class="img-fluid" src="assets/img/wikicommons.png">
             </a>
           </div>
-          <div class="item wikicommons col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://test.wikipedia.org/wiki/Wikipedia:Sandbox" class="item-wrap fancybox">
-              <div class="grid">
-                <h4>Test Wikipedia:Sandbox</h4>
 
-              </div>
-              <img style="width: 50px" class="img-fluid" src="assets/img/wikicommons.png">
-            </a>
-          </div>
           <div class="item wikicommons col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://commons.wikimedia.org/wiki/File:Tabular_data_from_SPARQL_-_workflown_2022-11-29.png">
+            <a href="https://commons.wikimedia.org/wiki/File:Tabular_data_from_SPARQL_-_workflown_2022-11-29.png"
+              target="_blank">
               <div class="grid">
                 <h4>FlowChart: Tabular data from SPARQL</h4>
 
@@ -143,7 +131,17 @@
             </a>
           </div>
           <div class="item querysample col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="https://commons.wikimedia.beta.wmflabs.org/wiki/Data:BooleanSample.tab" class="item-wrap fancybox">
+            <a href="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fauthor%20%3FauthorLabel%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20wdt%3AP5008%20wd%3AQ28821155%20.%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP170%20%3FauthorItem%20%7D%20.%0A%20%20OPTIONAL%20%7B%20%20%3Fitem%20wdt%3AP2093%20%3FauthorString%20%20%7D.%0A%20%20BIND%28COALESCE%28%3FauthorItem%2C%3FauthorString%29%20as%20%3Fauthor%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%20%23%20Helps%20get%20the%20label%20in%20your%20language%2C%20if%20not%2C%20then%20en%20language%0A%0A%0A%7D%0A"
+              class="item-wrap fancybox" target="_blank">
+              <div class="grid">
+                <h4>Mixed DataType:Authors</h4>
+              </div>
+              <img style="width: 60px" class="img-fluid" src="assets/img/wikimedia-cloud-services.svg">
+            </a>
+          </div>
+          <div class="item querysample col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="https://commons.wikimedia.beta.wmflabs.org/wiki/Data:BooleanSample.tab" class="item-wrap fancybox"
+              target="_blank">
               <div class="grid">
                 <h4>Data:BooleanSample.tab</h4>
               </div>
@@ -152,43 +150,48 @@
           </div>
           <div class="item querysample col-sm-6 col-md-4 col-lg-4 mb-4">
             <a href="https://commons.wikimedia.beta.wmflabs.org/wiki/Data:Population_of_Finland.tab"
-              class="item-wrap fancybox">
+              class="item-wrap fancybox" target="_blank">
               <div class="grid">
                 <h4>Data:Population of Finland.tab</h4>
-
               </div>
               <img style="width: 60px" class="img-fluid" src="assets/img/wikimedia-cloud-services.svg">
             </a>
           </div>
         </div>
       </div>
-    </section><!-- End  Links Section -->
-
-
+    </section>
+    <!-- End  Links Section -->
 
     <!-- ======= GOOGLE SLIDE ======= -->
-    <section class="section services">
+    <section class="section">
       <div class="container">
         <div class="row justify-content-center text-center mb-4">
-          <h2 class="h2 heading"><mark>Presentation</mark></h2>
+          <h2 class="h2 heading"><mark>Presentation Slide</mark></h2>
           <p>The detail presentation</p>
           <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vRJaA2ub1yfqVLtz1Z6glXoLAllTgQFQ6GJvf0c1n8bs6aJJvXdfP8Z0Cj3TTUehE5lcVwJeiexp9n_/embed?start=false&loop=false&delayms=3000"
             frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true"
             webkitallowfullscreen="true">
           </iframe>
-        </div </div>
+    </section>
+    <!-- End GOOGLE SLIDE-->
 
-    </section><!-- End Services Section -->
+  </main>
+  <!-- End #main -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ABOUT US======= -->
   <footer class="footer" role="contentinfo">
     <div class="container">
+
       <h5 class="mb-0 justify-content-center text-center">Josephine Closan &amp; Linh Nguyen</h5>
       <div class="row">
       </div>
+    </div>
+    <div class="col-sm-6 social text-md-end">
+      <a href="#"><span class="bi bi-twitter"></span></a>
+      <a href="#"><span class="bi bi-facebook"></span></a>
+      <a href="#"><span class="bi bi-instagram"></span></a>
+      <a href="#"><span class="bi bi-linkedin"></span></a>
     </div>
   </footer>
 
