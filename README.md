@@ -1,3 +1,3 @@
-# WEBSITE: https://wikimedia-project.netlify.app/
+# WEBSITE SHOWCASE: https://wikimedia-project.netlify.app/
 
  Website containing both Tabular Data and Muinaismuistot projects
